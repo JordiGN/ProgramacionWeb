@@ -5,23 +5,23 @@
 <title>Practica 2</title>
 </head>
 <body>
-<h2>Captura de datos de alumno</h2>
-<!--Metodos de envio del formulacio
-Existen dos metodos de envio de datos:
-get: El formulatio se envia como parte de la URL.
-post: El formulario se envia en la seccion de datos de la petición -->
-<form action="">
-<label for="ncontrol">No. de Control</label>
-<input type="text" name="ncontrol" placeholder="No. de Control" required>
-<br/>
-<label for="nom" >Nombre:</label>
-<input type="text" name="nom" placeholder="Escriba su nombre complero" required>
-<br/>
-<label for="fnac">Fecha de nacimiento:</label>
-<input type="date" name="fnac" placeholder="dd/mm/aaaa"nrequired>
-<br/>
-<input type="submit" name="enviar" value="Enviar">
-<br/>
-</form>
+	<h2>Captura de datos de alumno</h2>
+	<!--Metodos de envio del formulacio
+	Existen dos metodos de envio de datos:
+	get: El formulatio se envia como parte de la URL.
+	post: El formulario se envia en la seccion de datos de la petición -->
+	<form method="POST" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+		<label for="ncontrol">No. de Control</label>
+		<input type="text" name="ncontrol" placeholder="No. de Control" required>
+		<br/>
+		<label for="nom" >Nombre:</label>
+		<input type="text" name="nom" placeholder="Escriba su nombre complero" required>
+		<br/>
+		<label for="fnac">Fecha de nacimiento:</label>
+		<input type="text" name="fnac" placeholder="dd/mm/aaaa" title="Fecha de Nacimiento">
+		<br/>
+		<input type="submit" name="enviar" value="Enviar">
+		<br/>
+	</form>
 </body>
 </html>
