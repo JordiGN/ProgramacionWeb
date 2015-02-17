@@ -20,10 +20,19 @@
 		<input type="text" name="nom" placeholder="Escriba su nombre complero" required>
 		<br/>
 		<label for="fnac">Fecha de nacimiento:</label>
-		<input type="text" name="fnac" placeholder="dd/mm/aaaa" title="Fecha de Nacimiento">
+		<input type="date" name="fnac" placeholder="dd/mm/aaaa" title="Fecha de Nacimiento">
 		<br/>
+		<label for="carrera">Carrera</label>
+		<select name="carrera" id="">
+			<option value="1">Ing. Informatica</option>
+			<option value="2">Ing. Sistemas</option>
+			<option value="3">Ing. Software</option>
+		</select>
+		<br/>
+		<label for="turno">Turno</label><br> 
+		<input type="Radio" name="Turno" value="1" checked>Matutino <br/>	
+		<input type="Radio" name="Turno" value="2"checked>Vespertino<br/>
 		<input type="submit" name="enviar" value="Enviar">
-		<br/>
 	</form>
 </body>
 </html>
