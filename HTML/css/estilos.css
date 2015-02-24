@@ -1,0 +1,25 @@
+#wrapper
+{
+	width: 900px;
+	height: 600px;
+	background-color: yellow;
+	margin: auto auto;
+	/* 
+em (escalas) es adaptativo y cuida mucho las proporciones
+px son los pixeles que se le da de tamnaio
+*/
+}
+
+#wrapper>header/*Que el elemento sea hijo directo del elemento anterior*/
+{
+	width: 100%;
+	height: 150px;
+	background-color: blue;
+}
+
+#wrapper>footer
+{
+	width: 100%;
+	background-color: black;
+	color: white;
+}
