@@ -1,7 +1,7 @@
 #wrapper
 {
 	width: 900px;
-	height: 600px;
+	height: 100%;
 	background-color: yellow;
 	margin: auto auto;
 	/* 
@@ -20,6 +20,40 @@ px son los pixeles que se le da de tamnaio
 #wrapper>footer
 {
 	width: 100%;
-	background-color: black;
+	height: 50px;
+	padding-top: 10px;
+	background-color: gray;
 	color: white;
+	text-align: center;
+}
+body
+{
+	background-color: black;
+}
+
+nav ul
+{
+	list-style: none;
+}
+
+nav ul a
+{
+	text-decoration: none;
+}
+
+nav ul li
+{
+	display: inline;
+}
+
+nav ul li a:hover
+{
+	background-color: blue;
+	color: white;
+}
+
+nav ul li a
+{
+	padding-left: 3px;
+	padding-right: 3px;
 }
