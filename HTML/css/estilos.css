@@ -29,6 +29,7 @@ px son los pixeles que se le da de tamnaio
 	background-color: gray;
 	color: white;
 	text-align: center;
+	font-size: .5em;
 }
 body
 {
@@ -60,4 +61,14 @@ nav ul li a
 {
 	padding-left: 3px;
 	padding-right: 3px;
+}
+
+body
+{
+	font-family: "'Times New Roman",Georgia,Serif;
+	font-size: 14px;
+}
+@font-face{
+	font-family: "Roboto Slab";
+	src:url('http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css');
 }
