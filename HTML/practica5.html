@@ -50,17 +50,33 @@
 		{
 			var palabra=document.getElementById('texto').value;
 			var p1=document.getElementById('p1').innerText;
-			alert(palabra);
+			//alert(palabra);
 			var cadena=p1.search(palabra);
-			alert(cadena);
+			//alert(cadena);
 			
 			if (cadena>=0) {
-				alert('Palabra encontrada en la posicin' +cadena);
+				alert(palabra+'Palabra encontrada en la posición' +cadena);
+				cambia(p1,palabra);
 			}
 			else
-				alert('Palabra no encontrada');
+				{
+					alert(palabra+'Palabra no encontrada');
+				document.getElementById('resultado').innerHTML='No encontrado';
+				}
 		}
+		function cambia(texto,subcadena)
+		{
+			texto=texto.split(subcadena).join("<span class='bkRed'>"+subcadena+"</span>");
+			document.getElementById('p1').innerHTML=texto;
+		}
+
 	</script>
+	<style>
+		.bkRed
+		{
+			background-color: yellow;
+		}
+	</style>
 
 </head>
 <body>
@@ -76,5 +92,6 @@
 	<button onclick="minusculas()">Minusculas</button>
 	<input type="" id="texto">
 	<button onclick="buscar()">Buscar</button>
+	<span id="resultado"></span>
 </body>
 </html>
