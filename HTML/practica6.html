@@ -6,6 +6,7 @@
 	<script>
 	function delNodo()
 	{
+		alert('borrar nodo');
 
 	}
 
@@ -14,9 +15,9 @@
 			var texto= document.getElementById('valor').value;
 			var btn =document.createElement('button');
 			btn.innerHTML="Borrar";
-			
+			btn.setAttribute("onclick","delNodo();");
 
-			texto=texto;
+			texto+=" ";
 			var li_node=document.createElement('li');
 			var text_node=document.createTextNode(texto);
 			li_node.appendChild(text_node);
